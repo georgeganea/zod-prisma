@@ -6,7 +6,7 @@ export const DocumentModel = z.object({
   filename: z.string(),
   author: z.string(),
   contents: z.string(),
-  status: z.nativeEnum(Status).describe('Status|'),
+  status: z.nativeEnum(Status).describe('enums.Status'),
   created: z.date(),
   updated: z.date(),
 })
